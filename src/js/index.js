@@ -1,4 +1,5 @@
 import Handlebars from "handlebars";
+import { notice } from "@pnotify/core";
 import midTemplateSource from "../handlebars/mid.hbs?raw";
 import succesTemplateSource from "../handlebars/succes.hbs?raw";
 
@@ -57,7 +58,13 @@ const getCountry = (countryName) => {
       } else if (data.data.objects.length > 10) {
         errCountry(data);
       } else if (data.data.objects.length < 1) {
-        const error = alert("Undefined");
+        notice({
+          title: "Помилка",
+          text: "Не знайшло країну",
+          closer: true,
+          sticker: false,
+          closeOnStackClick: true,
+        });
       }
     })
     .catch((err) => {

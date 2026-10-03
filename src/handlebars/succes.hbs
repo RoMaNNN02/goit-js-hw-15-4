@@ -2,11 +2,17 @@
   <h2 class="country-name">{{names}}</h2>
   <div class="country-container">
 
-    <ul class="country-info">
-      <li class="country-item">Столиця: {{capitals}}</li>
-      <li class="country-item">Населення: {{population}} люд.</li>
-      <li class="country-item">Мови:{{languages}}</li>
-    </ul>
+    <div class="information-container">
+      <ul class="country-info">
+        <li class="country-item">Столиця: {{capitals}}</li>
+        <li class="country-item">Населення: {{population}} люд.</li>
+      </ul>
+      <ul class="country-list">Мови:
+        {{#each languages}}
+          <li class="country-languages">{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
     <div class="flag-container">
       <img src="{{flag}}" alt="{{names}}" class="country-flag" />
 
