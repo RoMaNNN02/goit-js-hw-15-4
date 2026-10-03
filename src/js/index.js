@@ -68,5 +68,5 @@ const getCountry = (countryName) => {
 const handleSearchCountry = () => {
   getCountry(searchInput.value);
 };
-const debouncedSearchCountry = _.debounce(handleSearchCountry, 500);
+const debouncedSearchCountry = _.debounce(handleSearchCountry, 1000);
 searchInput.addEventListener("input", debouncedSearchCountry);
