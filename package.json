@@ -4,7 +4,7 @@
   },
   "scripts": {
     "dev": "vite src",
-    "build": "vite build src --root src",
+    "build": "vite build",
     "preview": "vite preview src"
   },
   "dependencies": {
