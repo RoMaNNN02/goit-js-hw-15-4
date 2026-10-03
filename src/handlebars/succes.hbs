@@ -1,16 +1,15 @@
 <div class="country-card">
-  <img
-    src="{{flags}}"
-    alt="{{name.official}}"
-    class="country-flag"
-    width="50"
-  />
-  <h1 class="country-name">
-    {{name.official}}
-  </h1>
-  <ul class="country-info">
-    <li>Столиця: {{capital}}</li>
-    <li>Населення: {{population}} чел.</li>
-    <li>Мови:{{language}}</li>
-  </ul>
+  <h2 class="country-name">{{names}}</h2>
+  <div class="country-container">
+
+    <ul class="country-info">
+      <li class="country-item">Столиця: {{capitals}}</li>
+      <li class="country-item">Населення: {{population}} люд.</li>
+      <li class="country-item">Мови:{{languages}}</li>
+    </ul>
+    <div class="flag-container">
+      <img src="{{flag}}" alt="{{names}}" class="country-flag" />
+
+    </div>
+  </div>
 </div>

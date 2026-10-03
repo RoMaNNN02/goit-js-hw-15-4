@@ -8,6 +8,8 @@
     "preview": "vite preview src"
   },
   "dependencies": {
+    "handlebars": "^4.7.9",
+    "lodash": "^4.18.1",
     "pnotify": "^5.2.0"
   }
 }

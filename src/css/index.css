@@ -1,40 +1,49 @@
+body {
+  background-color: #e68eff;
+}
+.country-card {
+  width: 500px;
+}
+.country-name {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.country-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.country-info {
+  list-style: none;
+}
+.country-item {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.country-flag {
+  width: 200px;
+}
+.search-input {
+  padding-left: 5px;
+  padding-right: 25px;
+  padding-block: 10px;
+  font-size: 15px;
+  border: 1px solid #efb3ff;
+  border-radius: 11px;
+  color: #210039;
+  background-color: #fae8ff;
+}
+.search-input:focus {
+  border: 1px solid #de67ff;
+  border-radius: 11px;
+  color: #210039;
+  background-color: #f6d6ff;
+}
 .container {
+  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 500px;
-  margin: 50px auto;
-}
-
-.search-input {
-  flex: 1;
-  padding: 12px 20px;
-  font-size: 16px;
-  border: 2px solid #838383;
-  border-right: none;
-  border-radius: 8px 0 0 8px;
-  outline: none;
-  transition: border-color 0.3s ease;
-}
-
-.search-input:focus {
-  border-color: #687c91;
-}
-
-.search-btn {
-  padding: 12px 24px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: #fff;
-  border: 2px solid #00356e;
-  border-radius: 0 8px 8px 0;
-  cursor: pointer;
-  transition:
-    background-color 0.3s ease,
-    border-color 0.3s ease;
-}
-
-.search-btn:hover {
-  background-color: #0056b3;
-  border-color: #001d3c;
 }
